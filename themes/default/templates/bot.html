@@ -30,6 +30,7 @@
         }
 
         #user-input:focus {
+            
             outline: none;
         }
 
@@ -59,7 +60,7 @@
                 <p><strong>Chatbot:</strong> {{ response }}</p>
             {% endif %}
         </div>
-        <form id="user-input-form" action="" method="post">
+        <form id="user-input-form"  method="post">
             {% csrf_token %}
             <input type="text" id="user-input" name="user_input" placeholder="Enter your message">
             <button type="submit">Send</button>
