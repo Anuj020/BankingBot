@@ -56,7 +56,7 @@ def user_login(request):
     return render(request, 'login.html')
 
 def logout_view(request):
-    del request.session['User']
+    del request.session['user']
     return redirect('login')
 
 @login_required(login_url='login')
