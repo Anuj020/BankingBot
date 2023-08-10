@@ -1,1 +1,1 @@
-web: gunicorn bankingbot:app
+web: gunicorn bankingbot.wsgi
